@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>Zewail Pulse - Club Member Portal: Robotics Club</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container-low": "#f2f3ff", "surface-container": "#eaedff", "secondary-fixed": "#79f7e3", "surface-dim": "#d2d9f4", "on-tertiary": "#ffffff", "tertiary": "#1b0d00", "on-primary-container": "#778db2", "outline": "#74777f", "surface-variant": "#dae2fd", "surface-bright": "#faf8ff", "inverse-primary": "#b1c7f0", "inverse-on-surface": "#eef0ff", "on-surface": "#131b2e", "error-container": "#ffdad6", "surface": "#faf8ff", "on-surface-variant": "#44474e", "on-primary": "#ffffff", "on-secondary-fixed": "#00201c", "primary-fixed-dim": "#b1c7f0", "secondary": "#006b5f", "on-error": "#ffffff", "secondary-container": "#76f4e0", "outline-variant": "#c4c6cf", "primary": "#001026", "tertiary-fixed-dim": "#ffb95f", "on-secondary-fixed-variant": "#005047", "on-error-container": "#93000a", "surface-container-highest": "#dae2fd", "error": "#ba1a1a", "on-tertiary-fixed": "#2a1700", "surface-container-lowest": "#ffffff", "inverse-surface": "#283044", "primary-fixed": "#d5e3ff", "surface-tint": "#495f82", "tertiary-fixed": "#ffddb8", "on-background": "#131b2e", "secondary-fixed-dim": "#59dbc7", "on-secondary": "#ffffff", "on-secondary-container": "#006f63", "on-primary-fixed": "#001c3b", "surface-container-high": "#e2e7ff", "tertiary-container": "#372000", "background": "#faf8ff", "on-primary-fixed-variant": "#314769", "primary-container": "#0b2545", "on-tertiary-container": "#c47d00", "on-tertiary-fixed-variant": "#653e00" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter": "1.5rem", "space-sm": "0.5rem", "space-xl": "2.25rem", "margin": "2.5rem", "space-lg": "1.5rem", "space-md": "1rem", "space-xs": "0.25rem" }, "fontFamily": { "body-sm": [ "Inter" ], "headline-md": [ "Plus Jakarta Sans" ], "caption": [ "Inter" ], "label-md": [ "Inter" ], "display-sm": [ "Plus Jakarta Sans" ], "headline-xl": [ "Plus Jakarta Sans" ], "body-md": [ "Inter" ], "label-sm": [ "Inter" ], "title-sm": [ "Inter" ], "headline-lg": [ "Plus Jakarta Sans" ], "body-lg": [ "Inter" ], "display-lg": [ "Plus Jakarta Sans" ] }, "fontSize": { "body-sm": [ "0.8125rem", { "lineHeight": "1.5", "fontWeight": "400" } ], "headline-md": [ "1.25rem", { "lineHeight": "1.4", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "caption": [ "0.6875rem", { "lineHeight": "1.3", "letterSpacing": "0.04em", "fontWeight": "500" } ], "label-md": [ "0.875rem", { "lineHeight": "1.4", "letterSpacing": "0.01em", "fontWeight": "500" } ], "display-sm": [ "2.5rem", { "lineHeight": "1.2", "letterSpacing": "-0.025em", "fontWeight": "700" } ], "headline-xl": [ "2rem", { "lineHeight": "1.25", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "body-md": [ "0.9375rem", { "lineHeight": "1.6", "fontWeight": "400" } ], "label-sm": [ "0.75rem", { "lineHeight": "1.3", "letterSpacing": "0.03em", "fontWeight": "600" } ], "title-sm": [ "1rem", { "lineHeight": "1.5", "letterSpacing": "-0.005em", "fontWeight": "600" } ], "headline-lg": [ "1.5rem", { "lineHeight": "1.3", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "body-lg": [ "1.125rem", { "lineHeight": "1.6", "fontWeight": "400" } ], "display-lg": [ "3.5rem", { "lineHeight": "1.15", "letterSpacing": "-0.03em", "fontWeight": "800" } ] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased min-h-screen flex flex-col"><header class="fixed top-0 left-0 w-full z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-[1440px] mx-auto px-margin flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-xl flex-shrink-0"><a class="flex items-center gap-space-sm group" data-path="dashboard" href="dashboard.html"><div class="flex flex-col"><span class="font-headline-md text-headline-md text-primary tracking-tight leading-none group-hover:text-secondary transition-colors">Zewail<span class="text-secondary">Pulse</span></span><span class="font-caption text-caption text-on-surface-variant tracking-wider uppercase leading-none mt-1">Student Hub</span></div></a><nav class="hidden xl:flex items-center gap-space-xs p-1 bg-surface-container-low rounded-full" data-active-classes="bg-primary-container text-on-primary font-semibold rounded-full">
+<a  class="px-space-md py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="dashboard" href="dashboard.html">Dashboard</a>
+<a  class="px-space-md py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="events-board" href="events.html">Events Board</a>
+<a aria-current="page" class="px-space-md py-space-xs transition-colors bg-primary-container text-on-primary font-semibold rounded-full shadow-sm" data-path="club-directory" href="clubs.html">Club Directory</a>
+</nav></div><div class="flex items-center gap-space-md flex-1 justify-end">
+  <div class="relative max-w-xs w-full hidden md:block">
+    <span class="material-symbols-outlined absolute left-space-sm top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]">search</span>
+    <input id="headerSearchInput" class="w-full h-10 pl-10 pr-space-md bg-surface-container-low rounded-full font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-secondary transition-all" placeholder="Search events, clubs, labs..." type="text" onkeydown="if(event.key==='Enter'){ window.location.href='events.html?q='+encodeURIComponent(this.value); }"/>
+  </div>
+  
+  <!-- Notification Bell with Dropdown (FR-04 Scenario 4.2) -->
+  <div class="relative">
+    <button id="notifBellBtn" aria-label="Notifications" class="relative w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors cursor-pointer" type="button" title="View Campus Alerts">
+      <span class="material-symbols-outlined text-[22px]">notifications</span>
+      <span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-secondary ring-2 ring-surface-container-lowest animate-pulse"></span>
+    </button>
+    <div id="notifDropdown" class="hidden absolute right-0 top-12 w-80 bg-surface-container-lowest shadow-2xl rounded-2xl border border-surface-container-high p-space-md z-50 flex flex-col gap-2">
+      <div class="flex items-center justify-between pb-2 border-b border-surface-container">
+        <span class="font-label-md font-bold text-primary flex items-center gap-1.5"><span class="material-symbols-outlined text-secondary text-[18px]">notifications_active</span> Campus Alerts</span>
+        <span class="text-caption px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-semibold">3 Unread</span>
+      </div>
+      <div class="flex flex-col gap-2 max-h-64 overflow-y-auto pr-1">
+        <a href="club-portal.html" class="p-2.5 rounded-xl bg-surface-container-low hover:bg-surface-container flex flex-col gap-0.5 text-left transition-colors">
+          <span class="font-label-sm font-semibold text-primary flex items-center justify-between">Robotics Club Assembly <span class="text-caption text-secondary font-mono">14m ago</span></span>
+          <span class="font-caption text-on-surface-variant">Lab 102 ROS 2 & LiDAR workshop tomorrow 2:00 PM.</span>
+        </a>
+        <a href="event-details.html" class="p-2.5 rounded-xl hover:bg-surface-container-low flex flex-col gap-0.5 text-left transition-colors">
+          <span class="font-label-sm font-semibold text-primary flex items-center justify-between">Autonomous Rover Workshop <span class="text-caption text-secondary font-mono">1h ago</span></span>
+          <span class="font-caption text-on-surface-variant">Seats filling up fast (84% full). Click to view event details.</span>
+        </a>
+        <a href="club-showcase.html" class="p-2.5 rounded-xl hover:bg-surface-container-low flex flex-col gap-0.5 text-left transition-colors">
+          <span class="font-label-sm font-semibold text-primary flex items-center justify-between">Club Q&A Response <span class="text-caption text-secondary font-mono">5h ago</span></span>
+          <span class="font-caption text-on-surface-variant">Dr. Tarek Ibrahim answered your inquiry on telescope lab access.</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- User Profile Badge with Quick Menu (FR-03 & Requirement 5: Profile Screen Link) -->
+  <div class="relative">
+    <button id="userProfileBtn" class="flex items-center gap-space-sm pl-space-xs pr-space-md py-space-xs bg-surface-container-low rounded-full hover:bg-surface-container transition-colors cursor-pointer text-left " type="button" title="Student Profile & Settings">
+      <div class="relative flex-shrink-0">
+        <img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="assets/images/avatar-omar-ashraf.png"/>
+        <span class="absolute -bottom-0.5 -right-0.5 w-2.5 h-2.5 rounded-full bg-secondary ring-2 ring-surface-container-lowest"></span>
+      </div>
+      <div class="hidden sm:flex flex-col text-left">
+        <div class="flex items-center gap-1.5">
+          <span class="font-label-sm text-label-sm text-on-surface font-semibold leading-tight">Omar Ashraf</span>
+          <span class="material-symbols-outlined text-secondary text-[14px]">verified</span>
+        </div>
+        <span class="font-caption text-caption text-on-surface-variant leading-tight">CS &amp; AI '26 • ID: 202400725</span>
+      </div>
+    </button>
+    <div id="userProfileDropdown" class="hidden absolute right-0 top-12 w-72 bg-surface-container-lowest shadow-2xl rounded-2xl border border-surface-container-high p-space-md z-50 flex flex-col gap-2">
+      <div class="pb-2 border-b border-surface-container flex flex-col">
+        <span class="font-label-md font-bold text-primary">Omar Ashraf</span>
+        <span class="font-caption text-on-surface-variant">s-oashraf@zewailcity.edu.eg</span>
+        <span class="font-caption text-secondary font-semibold mt-1 flex items-center gap-1">
+          <span class="material-symbols-outlined text-[14px]">badge</span>
+          Robotics Lead • UST Fellow
+        </span>
+      </div>
+      
+      <!-- Prominent Student Profile Button (Requirement 5) -->
+      <a href="profile.html" class="flex items-center gap-2.5 p-2.5 rounded-xl bg-surface-container hover:bg-surface-container-high text-primary font-bold text-label-sm transition-all border border-secondary/30 shadow-sm">
+        <div class="w-8 h-8 rounded-full bg-primary-container text-secondary flex items-center justify-center shrink-0">
+          <span class="material-symbols-outlined text-[20px]">account_circle</span>
+        </div>
+        <div class="flex flex-col text-left">
+          <span>Student Profile (FR-03)</span>
+          <span class="font-caption text-on-surface-variant font-normal">View Bio, Records & Settings</span>
+        </div>
+      </a>
+
+      <a href="dashboard.html" class="flex items-center gap-2 p-2 text-on-surface hover:text-primary rounded-lg hover:bg-surface-container-low transition-colors text-label-sm font-medium">
+        <span class="material-symbols-outlined text-[18px] text-secondary">dashboard</span> Student Dashboard
+      </a>
+      <a href="club-portal.html" class="flex items-center gap-2 p-2 text-on-surface hover:text-primary rounded-lg hover:bg-surface-container-low transition-colors text-label-sm font-medium">
+        <span class="material-symbols-outlined text-[18px] text-secondary">smart_toy</span> Robotics Member Portal
+      </a>
+      <a href="clubs.html" class="flex items-center gap-2 p-2 text-on-surface hover:text-primary rounded-lg hover:bg-surface-container-low transition-colors text-label-sm font-medium">
+        <span class="material-symbols-outlined text-[18px] text-secondary">groups</span> Campus Club Directory
+      </a>
+      <a href="login.html" class="flex items-center gap-2 p-2 text-error rounded-lg hover:bg-error-container/30 transition-colors text-label-sm font-semibold border-t border-surface-container mt-1 pt-2">
+        <span class="material-symbols-outlined text-[18px]">logout</span> Sign Out
+      </a>
+    </div>
+  </div>
+</div>
+</div></header><main class="w-full pt-20 bg-surface flex-1"><div class="flex flex-col w-full">
+<!-- Top Ambient Glow Field (Contained) -->
+<div class="relative w-full max-w-[1440px] mx-auto px-margin pt-space-xl pb-space-lg">
+<div class="absolute top-0 right-1/4 w-96 h-96 bg-secondary/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute top-12 left-10 w-80 h-80 bg-primary-container/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<!-- 1. Member Header & Status Banner -->
+<div class="w-full bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col lg:flex-row lg:items-center justify-between gap-space-lg">
+<div class="flex items-start sm:items-center gap-space-md">
+<div class="w-16 h-16 sm:w-20 sm:h-20 rounded-xl bg-primary-container flex items-center justify-center text-secondary-container shadow-md flex-shrink-0">
+<span class="material-symbols-outlined text-[40px]">smart_toy</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex flex-wrap items-center gap-space-sm mb-1">
+<span class="font-caption text-caption text-secondary font-semibold uppercase tracking-wider bg-surface-container-low px-2 py-0.5 rounded-full">UST Student Chapter</span>
+<span class="font-caption text-caption text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-outline">verified_user</span> Verified Org #CSAI-04
+            </span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-primary tracking-tight truncate">
+            Zewail Robotics Club <span class="font-body-md text-on-surface-variant text-base font-normal">(ZRC)</span>
+</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+            Member Portal • Welcome back, <strong class="text-on-surface font-semibold">Omar Ashraf</strong>
+</p>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row items-start sm:items-center gap-space-md">
+<!-- Active Member Pill -->
+<div class="flex items-center gap-space-sm bg-secondary-container/25 px-space-md py-space-xs rounded-full">
+<span class="relative flex h-2.5 w-2.5">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-secondary"></span>
+</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface font-bold">Active Member</span>
+<span class="font-caption text-caption text-secondary font-medium">Hardware &amp; Embedded Systems Team</span>
+</div>
+</div>
+<!-- Quick Actions Group -->
+<div class="flex items-center gap-space-xs">
+<span class="px-space-md py-space-xs rounded-xl bg-surface-container-low font-label-md text-label-md text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-secondary">memory</span>
+            Hardware Sub-team
+          </span>
+<button class="px-space-md py-space-xs rounded-xl bg-surface-container-low hover:bg-error-container text-on-surface-variant hover:text-on-error-container font-label-md text-label-md transition-colors flex items-center gap-1.5" id="openLeaveModalBtn" title="Manage Membership / Voluntary Departure (FR-12)">
+<span class="material-symbols-outlined text-[18px]">logout</span>
+            Leave Club
+          </button>
+</div>
+</div>
+</div>
+<!-- Sub-bar Stats / Key Quick Indicators -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-md mt-space-md">
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">calendar_clock</span>
+</div>
+<div class="flex flex-col">
+<span class="font-caption text-caption text-on-surface-variant uppercase tracking-wider">Attendance Rate</span>
+<span class="font-headline-md text-headline-md text-primary font-bold">94.2%</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[22px]">task_alt</span>
+</div>
+<div class="flex flex-col">
+<span class="font-caption text-caption text-on-surface-variant uppercase tracking-wider">Assigned Tasks</span>
+<span class="font-headline-md text-headline-md text-primary font-bold">3 Sprints Open</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[22px]">account_balance_wallet</span>
+</div>
+<div class="flex flex-col">
+<span class="font-caption text-caption text-on-surface-variant uppercase tracking-wider">Club Treasury</span>
+<span class="font-headline-md text-headline-md text-primary font-bold">7,300 EGP</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[22px]">groups</span>
+</div>
+<div class="flex flex-col">
+<span class="font-caption text-caption text-on-surface-variant uppercase tracking-wider">Enrolled Scholars</span>
+<span class="font-headline-md text-headline-md text-primary font-bold">48 Active</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Asymmetric Dashboard Grid -->
+<div class="w-full max-w-[1440px] mx-auto px-margin pb-space-xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT COLUMN (7 Cols): Announcements & Internal Discussions -->
+<div class="lg:col-span-7 flex flex-col gap-space-xl">
+<!-- 2. Club Announcements & Newsfeed (FR-13) -->
+<section class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[24px]">campaign</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">Official Notices &amp; Dispatch</h2>
+</div>
+<span class="font-caption text-caption text-on-surface-variant bg-surface-container-low px-space-sm py-1 rounded-full">
+              Updated Real-time
+            </span>
+</div>
+<!-- Pinned Announcement Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm relative overflow-hidden">
+<div class="absolute top-0 left-0 bottom-0 w-1.5 bg-secondary"></div>
+<div class="flex items-center justify-between gap-space-sm mb-space-sm">
+<span class="inline-flex items-center gap-1 bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm px-2.5 py-0.5 rounded-full font-bold">
+<span class="material-symbols-outlined text-[16px] text-tertiary-container">push_pin</span>
+                Pinned Notice
+              </span>
+<span class="font-caption text-caption text-outline">2 hours ago • Urgent Dispatch</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary tracking-tight mt-1">
+              [Urgent] Eurobot 2027 Rover Chassis CAD Review &amp; PCB Soldering Session
+            </h3>
+<div class="flex items-center gap-space-sm my-space-sm pb-space-sm bg-surface-container-low/40 p-space-xs rounded-lg">
+<img class="w-8 h-8 rounded-full object-cover" data-alt="Close up professional portrait of Ahmed Tarek, an Egyptian undergraduate robotics student leader smiling in a high-tech workshop wearing safety glasses" src="assets/images/member-avatar-1.png"/>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Ahmed Tarek</span>
+<span class="font-caption text-caption text-on-surface-variant">Club President • MechEng '25</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              All Hardware sub-team members must attend tonight’s joint review. We will evaluate the revised 6-wheel rocker-bogie differential mounts and complete hot-plate reflow soldering on the auxiliary sensor telemetry boards. Bring your protective eyewear.
+            </p>
+<div class="mt-space-md grid grid-cols-1 sm:grid-cols-2 gap-space-sm bg-surface-container-low p-space-md rounded-xl">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">room</span>
+<div class="flex flex-col">
+<span class="font-caption text-caption text-outline uppercase font-semibold">Location</span>
+<span class="font-label-sm text-label-sm text-on-surface font-medium">Robotics Workshop Lab B (Room 114)</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">schedule</span>
+<div class="flex flex-col">
+<span class="font-caption text-caption text-outline uppercase font-semibold">Session Time</span>
+<span class="font-label-sm text-label-sm text-on-surface font-medium">Tonight, 6:00 PM – 9:30 PM</span>
+</div>
+</div>
+</div>
+<!-- Mandatory Component Checklist for Sub-team -->
+<div class="mt-space-md">
+<span class="font-label-sm text-label-sm text-primary font-bold uppercase tracking-wider block mb-space-xs">
+                Preparation Checklist for Hardware Squad:
+              </span>
+<ul class="space-y-1.5 font-body-sm text-body-sm text-on-surface-variant">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Bring personal soldering flux &amp; fine copper braid wicks</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Verify latest pull request on GitHub repo (<code class="bg-surface-container px-1 py-0.5 rounded text-primary font-mono text-xs">zrc-eurobot/cad-v3.2</code>)</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Safety certification badge for CNC router bay access</span>
+</li>
+</ul>
+</div>
+</div>
+<!-- Secondary Announcement -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center justify-between gap-space-sm mb-space-xs">
+<span class="font-caption text-caption text-secondary font-semibold bg-surface-container-low px-2 py-0.5 rounded-full">
+                Operations &amp; Governance
+              </span>
+<span class="font-caption text-caption text-outline">Yesterday at 18:30</span>
+</div>
+<h4 class="font-title-sm text-title-sm text-primary font-bold">
+              Semester General Assembly Recap &amp; New Project Team Allocations
+            </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs line-clamp-2">
+              The minuted outcomes from Sunday's all-hands meeting are uploaded to the cloud repository. Sub-team rosters for Autonomous Underwater Vehicles (AUV) and Micro-Mouse are now locked for Spring 2025.
+            </p>
+<div class="mt-space-sm flex items-center justify-between pt-space-xs">
+<div class="flex items-center gap-space-xs">
+<img class="w-6 h-6 rounded-full object-cover" data-alt="Portrait of Salma Youssef, Egyptian female university software engineer student and robotics vice president" src="assets/images/member-avatar-2.png"/>
+<span class="font-caption text-caption text-on-surface-variant">Salma Youssef • VP Internal</span>
+</div>
+<a class="font-label-sm text-label-sm text-secondary font-semibold hover:underline flex items-center gap-1" href="#">
+                Read Meeting Minutes <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- 5. Internal Discussion & Q&A Forum (FR-14) -->
+<section class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[24px]">forum</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">Internal Lab Forum &amp; Inquiries</h2>
+</div>
+<span class="font-caption text-caption text-on-surface-variant">FR-14 Peer Exchange</span>
+</div>
+<!-- Quick "Ask an Officer" Interactive Input -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-secondary-container text-secondary flex items-center justify-center font-bold text-xs flex-shrink-0">
+                OA
+              </div>
+<input class="w-full h-10 px-space-md bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-secondary transition-all" id="forumInput" placeholder="Ask an officer, submit lab bug report, or request 3D filament release..." type="text"/>
+<button class="px-space-md h-10 bg-primary-container text-on-primary font-label-md text-label-md rounded-lg hover:bg-primary transition-colors flex items-center gap-1.5 flex-shrink-0" id="submitQueryBtn">
+<span class="material-symbols-outlined text-[18px]">send</span>
+<span>Post</span>
+</button>
+</div>
+<div class="flex items-center gap-space-md px-1 text-xs text-on-surface-variant">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">lock</span> Encrypted Club-Only Channel
+              </span>
+<span>•</span>
+<span>Officers typically respond within 45 mins</span>
+</div>
+</div>
+<!-- Thread Card with Official Officer Resolution -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<!-- Question Entry -->
+<div class="flex items-start gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-surface-container text-primary font-bold flex items-center justify-center text-xs flex-shrink-0">
+                KM
+              </div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary font-bold">Karim Mansour (Software Team)</span>
+<span class="font-caption text-caption text-outline">3 hours ago</span>
+</div>
+<h5 class="font-title-sm text-title-sm text-primary font-semibold mt-1">
+                  Are we running ROS2 Humble or Iron on the Eurobot Raspberry Pi 5 coprocessors?
+                </h5>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                  I am setting up the camera node Docker image for AprilTag odometry tracking, but hit an interface mismatch with the lidar driver on Ubuntu 24.04 noble.
+                </p>
+</div>
+</div>
+<!-- Official Officer Answer -->
+<div class="ml-space-md pl-space-md bg-surface-container-low/60 rounded-xl p-space-md flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex items-center gap-1 bg-secondary text-on-secondary px-2 py-0.5 rounded-full font-caption text-caption font-bold">
+<span class="material-symbols-outlined text-[14px]">shield</span>
+                    Officer Reply
+                  </span>
+<span class="font-label-sm text-label-sm text-primary font-bold">Mostafa Fathy</span>
+<span class="font-caption text-caption text-on-surface-variant">• Technical Director</span>
+</div>
+<span class="font-caption text-caption text-outline">1 hour ago</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface mt-1">
+                Stick strictly with <strong class="text-secondary font-mono font-semibold">ROS2 Humble (LTS)</strong> under Ubuntu 22.04 base images. We built custom Debian packages for the Slamtec RPLidar C1 which are available in the club NAS server folder: <code class="bg-surface-container px-1 py-0.5 rounded text-xs text-primary font-mono font-medium">/internal/drivers/lidar-humble/</code>. Let me know if the build fails.
+              </p>
+<div class="flex items-center gap-space-md mt-space-xs pt-space-xs text-xs text-on-surface-variant">
+<button class="flex items-center gap-1 hover:text-secondary transition-colors font-medium">
+<span class="material-symbols-outlined text-[16px]">thumb_up</span> Helpful (14)
+                </button>
+<button class="flex items-center gap-1 hover:text-secondary transition-colors font-medium">
+<span class="material-symbols-outlined text-[16px]">reply</span> Reply in Thread
+                </button>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- RIGHT COLUMN (5 Cols): Internal Activities, Transparency & Directory -->
+<div class="lg:col-span-5 flex flex-col gap-space-xl">
+<!-- 3. Upcoming Internal Club Activities & Events -->
+<section class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[24px]">event_upcoming</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">Internal Sessions</h2>
+</div>
+<span class="font-caption text-caption text-secondary font-semibold bg-surface-container-low px-2 py-0.5 rounded-full">2 This Week</span>
+</div>
+<!-- Activity Card 1 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">Mandatory Sprint</span>
+</div>
+<span class="font-caption text-caption text-outline">Tomorrow</span>
+</div>
+<h3 class="font-title-sm text-title-sm text-primary font-bold">
+              Weekly Hardware Sprints: Power Distro &amp; Motor Drivers
+            </h3>
+<div class="space-y-1 font-body-sm text-body-sm text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-outline">schedule</span>
+<span>Every Wednesday, 4:00 PM – 7:00 PM</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-outline">location_on</span>
+<span>Robotics Workshop Lab B (UST Engineering Hall)</span>
+</div>
+</div>
+<!-- RSVP Toggles -->
+<div class="mt-space-xs pt-space-xs flex items-center justify-between bg-surface-container-low p-space-xs rounded-lg">
+<span class="font-caption text-caption text-on-surface font-semibold ml-2">RSVP Status:</span>
+<div class="flex items-center gap-1.5">
+<button class="rsvp-btn active-rsvp px-space-sm py-1 rounded-full font-label-sm text-label-sm bg-secondary text-on-secondary font-semibold flex items-center gap-1 shadow-sm transition-all" onclick="setRsvp(this, 'attending')">
+<span class="material-symbols-outlined text-[16px]">check</span> I'm Attending
+                </button>
+<button class="rsvp-btn px-space-sm py-1 rounded-full font-label-sm text-label-sm bg-surface-container-lowest text-on-surface-variant hover:text-error font-medium transition-all" onclick="setRsvp(this, 'decline')">
+                  Can't Make It
+                </button>
+</div>
+</div>
+</div>
+<!-- Activity Card 2 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-fixed-dim"></span>
+<span class="font-label-sm text-label-sm text-primary font-bold uppercase tracking-wider">Internal Tournament</span>
+</div>
+<span class="font-caption text-caption text-outline">Next Saturday</span>
+</div>
+<h3 class="font-title-sm text-title-sm text-primary font-bold">
+              Internal Micro-Mouse Autonomous Maze Challenge
+            </h3>
+<div class="space-y-1 font-body-sm text-body-sm text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-outline">schedule</span>
+<span>Saturday, 10:00 AM – 3:30 PM</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-outline">location_on</span>
+<span>Engineering Building Central Atrium</span>
+</div>
+</div>
+<!-- RSVP Toggles -->
+<div class="mt-space-xs pt-space-xs flex items-center justify-between bg-surface-container-low p-space-xs rounded-lg">
+<span class="font-caption text-caption text-on-surface font-semibold ml-2">RSVP Status:</span>
+<div class="flex items-center gap-1.5">
+<button class="rsvp-btn px-space-sm py-1 rounded-full font-label-sm text-label-sm bg-surface-container-lowest text-on-surface-variant hover:text-secondary font-medium transition-all" onclick="setRsvp(this, 'attending')">
+                  I'm Attending
+                </button>
+<button class="rsvp-btn px-space-sm py-1 rounded-full font-label-sm text-label-sm bg-surface-container-lowest text-on-surface-variant hover:text-error font-medium transition-all" onclick="setRsvp(this, 'decline')">
+                  Can't Make It
+                </button>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. Club Budget & Transparency Summary (Read-Only for Members, FR-13) -->
+<section class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[24px]">monetization_on</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">Budget Transparency</h2>
+</div>
+<span class="font-caption text-caption text-outline">FR-13 Open Ledger</span>
+</div>
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div>
+<div class="flex items-baseline justify-between">
+<span class="font-caption text-caption text-on-surface-variant font-bold uppercase tracking-wider">Approved Fall 2026 Budget</span>
+<span class="font-headline-md text-headline-md text-primary font-bold">18,500 EGP</span>
+</div>
+<div class="flex items-baseline justify-between mt-1 text-sm">
+<span class="text-on-surface-variant">Spent (Components &amp; Materials):</span>
+<span class="font-semibold text-error">11,200 EGP (60.5%)</span>
+</div>
+<div class="flex items-baseline justify-between mt-0.5 text-sm">
+<span class="text-on-surface-variant">Remaining Balance:</span>
+<span class="font-semibold text-secondary">7,300 EGP</span>
+</div>
+</div>
+<!-- Custom Clean SVG Progress Meter -->
+<div class="w-full">
+<div class="w-full h-3 bg-surface-container rounded-full overflow-hidden flex">
+<div class="h-full bg-primary" style="width: 42%;" title="Electronics &amp; Sensors"></div>
+<div class="h-full bg-secondary" style="width: 18.5%;" title="Chassis &amp; Extrusions"></div>
+<div class="h-full bg-transparent flex-1" title="Unallocated Reserve"></div>
+</div>
+<div class="flex items-center justify-between text-xs text-outline mt-1.5">
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-primary"></span> Electronics (7,800)</span>
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-secondary"></span> Mechanical (3,400)</span>
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-surface-container"></span> Reserve (7,300)</span>
+</div>
+</div>
+<!-- Recent Ledger Line Items -->
+<div class="pt-space-xs flex flex-col gap-2">
+<span class="font-label-sm text-label-sm text-primary font-bold uppercase tracking-wider">Recent Expense Audits:</span>
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low text-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-secondary">receipt_long</span>
+<div>
+<span class="font-semibold text-on-surface block">Arduino Nano BLE &amp; Sensor Modules (x8)</span>
+<span class="text-outline">Vendor: Ram Electronics • PO #882</span>
+</div>
+</div>
+<span class="font-mono font-bold text-on-surface">-3,650 EGP</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low text-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-secondary">receipt_long</span>
+<div>
+<span class="font-semibold text-on-surface block">Aluminum Extrusion 2020 &amp; M3 Hardware</span>
+<span class="text-outline">Vendor: Industrial Steel Co • PO #879</span>
+</div>
+</div>
+<span class="font-mono font-bold text-on-surface">-2,400 EGP</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low text-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-secondary">receipt_long</span>
+<div>
+<span class="font-semibold text-on-surface block">PLA+ 3D Printing Filaments (5 spools)</span>
+<span class="text-outline">Vendor: MakerFil Egypt • PO #874</span>
+</div>
+</div>
+<span class="font-mono font-bold text-on-surface">-1,750 EGP</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-2.5 rounded-lg flex items-center justify-between text-xs text-on-surface-variant">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[16px]">verified</span>
+                Audited by UST Student Finance Board
+              </span>
+<a class="text-secondary font-semibold hover:underline" href="#">Download CSV</a>
+</div>
+</div>
+</section>
+<!-- 6. Club Team Directory (Executive Board & Fellow Members) -->
+<section class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[24px]">badge</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">Executive Roster</h2>
+</div>
+<a class="font-label-sm text-label-sm text-secondary font-semibold hover:underline" href="#">View All 48</a>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm space-y-space-sm">
+<!-- President -->
+<div class="flex items-center justify-between p-space-xs rounded-lg hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-space-sm">
+<img class="w-10 h-10 rounded-full object-cover" data-alt="Portrait of Ahmed Tarek, president of Zewail Robotics Club wearing glasses and university blazer" src="assets/images/member-avatar-3.png"/>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface font-bold">Ahmed Tarek</span>
+<span class="font-caption text-caption text-secondary font-semibold">Club President</span>
+</div>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:text-secondary hover:bg-surface-container-high transition-colors" title="Message Leader">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+</button>
+</div>
+<!-- VP -->
+<div class="flex items-center justify-between p-space-xs rounded-lg hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-space-sm">
+<img class="w-10 h-10 rounded-full object-cover" data-alt="Portrait of Salma Youssef, Egyptian female software engineering student and vice president of robotics" src="assets/images/member-avatar-4.png"/>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface font-bold">Salma Youssef</span>
+<span class="font-caption text-caption text-secondary font-semibold">Vice President (Operations)</span>
+</div>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:text-secondary hover:bg-surface-container-high transition-colors" title="Message Leader">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+</button>
+</div>
+<!-- Tech Lead -->
+<div class="flex items-center justify-between p-space-xs rounded-lg hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-space-sm">
+<img class="w-10 h-10 rounded-full object-cover" data-alt="Portrait of Mostafa Fathy, Egyptian male computer engineering student, technical lead of Zewail Robotics Club" src="assets/images/member-avatar-5.png"/>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface font-bold">Mostafa Fathy</span>
+<span class="font-caption text-caption text-secondary font-semibold">Technical Lead • Embedded</span>
+</div>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:text-secondary hover:bg-surface-container-high transition-colors" title="Message Leader">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+</button>
+</div>
+<!-- Hardware Peers Avatar Stack -->
+<div class="pt-space-xs flex items-center justify-between bg-surface-container-low p-space-sm rounded-lg text-xs">
+<div class="flex items-center -space-x-2 overflow-hidden">
+<span class="inline-block h-7 w-7 rounded-full ring-2 ring-surface-container-lowest bg-primary-container text-on-primary text-[10px] font-bold flex items-center justify-center">OA</span>
+<span class="inline-block h-7 w-7 rounded-full ring-2 ring-surface-container-lowest bg-secondary text-on-secondary text-[10px] font-bold flex items-center justify-center">MK</span>
+<span class="inline-block h-7 w-7 rounded-full ring-2 ring-surface-container-lowest bg-outline text-surface-container-lowest text-[10px] font-bold flex items-center justify-center">RN</span>
+<span class="inline-block h-7 w-7 rounded-full ring-2 ring-surface-container-lowest bg-surface-container-high text-primary text-[10px] font-bold flex items-center justify-center">+11</span>
+</div>
+<span class="text-on-surface-variant font-medium">14 Fellow Hardware Specialists</span>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<!-- 7. Voluntary Leave Modal / Confirmation Trigger (FR-12) -->
+<div class="fixed inset-0 z-50 bg-primary/40 backdrop-blur-sm hidden items-center justify-center p-space-md" id="leaveClubModal">
+<div class="bg-surface-container-lowest w-full max-w-lg rounded-xl shadow-xl overflow-hidden animate-in fade-in zoom-in-95 duration-200">
+<!-- Modal Header -->
+<div class="p-space-lg bg-surface-container-low flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-error-container text-on-error-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">logout</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-primary font-bold">Voluntary Departure</h3>
+<span class="font-caption text-caption text-on-surface-variant">Membership Regulation (FR-12)</span>
+</div>
+</div>
+<button class="text-outline hover:text-on-surface" id="closeModalCross">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<!-- Modal Body -->
+<div class="p-space-lg flex flex-col gap-space-md">
+<p class="font-body-md text-body-md text-on-surface">
+          Are you sure you want to voluntarily relinquish your membership in <strong class="text-primary font-bold">Zewail Robotics Club (ZRC)</strong>?
+        </p>
+<div class="bg-surface-container-low p-space-md rounded-xl space-y-space-xs text-sm text-on-surface-variant">
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px] mt-0.5">info</span>
+<span>Your assigned role in the <strong class="text-on-surface">Hardware &amp; Embedded Systems Team</strong> will be cleanly vacated and returned to the applicant queue.</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px] mt-0.5">inventory_2</span>
+<span>Please return all borrowed equipment (multimeters, Raspberry Pi boards, lab keys) to Workshop Lab B within 48 hours.</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px] mt-0.5">history_edu</span>
+<span>Your participation record and verified attendance hours (94.2%) will remain preserved on your UST Academic Transcript profile.</span>
+</div>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1">
+            Reason for Departure (Optional for Club Records):
+          </label>
+<select class="w-full h-10 px-space-md bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface focus:ring-2 focus:ring-secondary focus:outline-none">
+<option>Academic workload &amp; Capstone research priority</option>
+<option>Transitioning to another university scientific society</option>
+<option>Graduation / Internship commitment</option>
+<option>Other personal circumstance</option>
+</select>
+</div>
+</div>
+<!-- Modal Footer -->
+<div class="p-space-lg bg-surface-container-low flex items-center justify-end gap-space-sm">
+<button class="px-space-md py-space-xs rounded-xl bg-surface-container-lowest text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors" id="cancelModalBtn">
+          Cancel • Retain Membership
+        </button>
+<button class="px-space-md py-space-xs rounded-xl bg-error text-on-error hover:bg-error/90 font-label-md text-label-md font-semibold transition-colors flex items-center gap-1.5 shadow-sm" id="confirmLeaveBtn">
+<span class="material-symbols-outlined text-[18px]">door_open</span>
+          Confirm Voluntary Departure
+        </button>
+</div>
+</div>
+</div>
+<!-- Micro-interaction JavaScript -->
+
+<script>
+    // 1. Leave Club Modal Functionality (FR-12)
+    const modal = document.getElementById('leaveClubModal');
+    const openBtn = document.getElementById('openLeaveModalBtn');
+    const closeCross = document.getElementById('closeModalCross');
+    const cancelBtn = document.getElementById('cancelModalBtn');
+    const confirmBtn = document.getElementById('confirmLeaveBtn');
+
+    function openModal() {
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeModal() {
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    if (openBtn) openBtn.addEventListener('click', openModal);
+    if (closeCross) closeCross.addEventListener('click', closeModal);
+    if (cancelBtn) cancelBtn.addEventListener('click', closeModal);
+
+    if (confirmBtn) {
+      confirmBtn.addEventListener('click', () => {
+        confirmBtn.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin">refresh</span> Processing Departure...';
+        setTimeout(() => {
+          showToast('Membership Departure Processed', 'Membership status updated to INACTIVE per FR-12. Redirecting to Club Directory...', 'logout');
+          closeModal();
+          setTimeout(() => {
+            window.location.href = 'clubs.html';
+          }, 1200);
+        }, 800);
+      });
+    }
+
+    // 2. RSVP Micro-Interaction (FR-07)
+    window.setRsvp = function(btn, type) {
+      const parent = btn.parentElement;
+      const allBtns = parent.querySelectorAll('.rsvp-btn');
+      
+      allBtns.forEach(b => {
+        b.className = 'rsvp-btn px-space-sm py-1 rounded-full font-label-sm text-label-sm bg-surface-container-lowest text-on-surface-variant font-medium transition-all';
+      });
+
+      if (type === 'attending') {
+        btn.className = 'rsvp-btn active-rsvp px-space-sm py-1 rounded-full font-label-sm text-label-sm bg-secondary text-on-secondary font-semibold flex items-center gap-1 shadow-sm transition-all';
+        btn.innerHTML = '<span class="material-symbols-outlined text-[16px]">check</span> I\'m Attending';
+        showToast('RSVP Confirmed', 'Meeting attendance logged as Present for upcoming assembly (FR-07).', 'check_circle');
+      } else {
+        btn.className = 'rsvp-btn px-space-sm py-1 rounded-full font-label-sm text-label-sm bg-error-container text-on-error-container font-semibold flex items-center gap-1 shadow-sm transition-all';
+        btn.innerHTML = '<span class="material-symbols-outlined text-[16px]">close</span> Can\'t Make It';
+        showToast('Absence Acknowledged', 'Status noted. Minutes will be dispatched to your inbox post-meeting.', 'info');
+      }
+    };
+
+    // 3. Forum Quick Post Micro-Interaction (FR-14)
+    const submitQueryBtn = document.getElementById('submitQueryBtn');
+    const forumInput = document.getElementById('forumInput');
+
+    if (submitQueryBtn && forumInput) {
+      submitQueryBtn.addEventListener('click', () => {
+        const val = forumInput.value.trim();
+        if (!val) {
+          forumInput.focus();
+          return;
+        }
+        submitQueryBtn.disabled = true;
+        submitQueryBtn.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin">sync</span>';
+        
+        setTimeout(() => {
+          forumInput.value = '';
+          submitQueryBtn.disabled = false;
+          submitQueryBtn.innerHTML = '<span class="material-symbols-outlined text-[18px]">done</span> Posted';
+          showToast('Discussion Note Published', 'Message broadcast to Robotics Autonomous Navigation thread (FR-14).', 'forum');
+          
+          setTimeout(() => {
+            submitQueryBtn.innerHTML = '<span class="material-symbols-outlined text-[18px]">send</span><span>Post</span>';
+          }, 2000);
+        }, 500);
+      });
+    }
+
+    // 4. Propose Event Functionality (FR-16)
+    function openProposalModal() {
+      document.getElementById('proposalModal').classList.remove('hidden');
+    }
+
+    function closeProposalModal() {
+      document.getElementById('proposalModal').classList.add('hidden');
+    }
+
+    function submitProposal() {
+      const title = document.getElementById('propTitle').value;
+      closeProposalModal();
+      showToast('Event Proposal Submitted (FR-16)', `"${title}" submitted with status PENDING for Administrator review (FR-17).`, 'event_available');
+    }
+</script>
+
+</div>
+<!-- FR-16 Event Proposal Submission Modal -->
+<div id="proposalModal" class="hidden fixed inset-0 bg-primary-container/60 backdrop-blur-sm z-50 flex items-center justify-center p-4">
+  <div class="bg-surface-container-lowest p-space-xl rounded-2xl max-w-xl w-full shadow-2xl border border-surface-container-high relative max-h-[90vh] overflow-y-auto">
+    <button onclick="closeProposalModal()" class="absolute top-4 right-4 text-on-surface-variant hover:text-on-surface p-1 rounded-full bg-surface-container"><span class="material-symbols-outlined text-[20px]">close</span></button>
+    <div class="flex items-center gap-space-xs mb-2">
+      <span class="material-symbols-outlined text-secondary text-[26px]">event_upcoming</span>
+      <h3 class="font-headline-md text-headline-md font-bold text-primary">Propose Campus Event (FR-16)</h3>
+    </div>
+    <p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Submit formal logistics proposal on behalf of Zewail Robotics Club with automated venue collision checking.</p>
+    <form onsubmit="event.preventDefault(); submitProposal();" class="space-y-3">
+      <div>
+        <label class="font-label-sm text-on-surface font-semibold block mb-1">Event Title *</label>
+        <input type="text" id="propTitle" placeholder="Autonomous SLAM & ROS 2 Robotics Exhibition" required class="w-full h-10 px-3 rounded-lg bg-surface font-body-sm text-on-surface border border-outline-variant focus:outline-none focus:ring-2 focus:ring-secondary"/>
+      </div>
+      <div class="grid grid-cols-2 gap-3">
+        <div>
+          <label class="font-label-sm text-on-surface font-semibold block mb-1">Target Date *</label>
+          <input type="date" id="propDate" value="2026-11-20" required class="w-full h-10 px-3 rounded-lg bg-surface font-body-sm text-on-surface border border-outline-variant focus:outline-none focus:ring-2 focus:ring-secondary"/>
+        </div>
+        <div>
+          <label class="font-label-sm text-on-surface font-semibold block mb-1">Timeslot *</label>
+          <select id="propTime" class="w-full h-10 px-3 rounded-lg bg-surface font-body-sm text-on-surface border border-outline-variant focus:outline-none focus:ring-2 focus:ring-secondary">
+            <option>10:00 AM - 1:00 PM</option>
+            <option>2:00 PM - 5:00 PM</option>
+            <option>6:00 PM - 9:00 PM</option>
+          </select>
+        </div>
+      </div>
+      <div>
+        <label class="font-label-sm text-on-surface font-semibold block mb-1">Requested Campus Venue *</label>
+        <select id="propVenue" class="w-full h-10 px-3 rounded-lg bg-surface font-body-sm text-on-surface border border-outline-variant focus:outline-none focus:ring-2 focus:ring-secondary">
+          <option>Nano Tech Building • Room 102 (Cap: 50)</option>
+          <option>Ahmed Zewail Grand Helmy Auditorium (Cap: 500)</option>
+          <option>CSAI Computer Lab 4 • Building B (Cap: 60)</option>
+          <option>Campus Observatory Deck • Tower C (Cap: 40)</option>
+        </select>
+      </div>
+      <div>
+        <label class="font-label-sm text-on-surface font-semibold block mb-1">Agenda & Technical Equipment Requirements *</label>
+        <textarea id="propAgenda" rows="3" placeholder="Specify workstation requirements, power drops, AV projection, and seating layout..." required class="w-full p-3 rounded-lg bg-surface font-body-sm text-on-surface border border-outline-variant focus:outline-none focus:ring-2 focus:ring-secondary"></textarea>
+      </div>
+      <div class="p-2.5 rounded-lg bg-surface-container-low border border-secondary/30 font-caption text-caption text-secondary font-semibold flex items-center gap-2">
+        <span class="material-symbols-outlined text-[18px]">verified</span>
+        <span>Automated Venue Conflict Guard: Timeslot confirmed clear in master booking ledger.</span>
+      </div>
+      <button type="submit" class="w-full h-11 rounded-full bg-secondary hover:bg-on-secondary-container text-on-secondary font-label-md font-semibold transition-all mt-2 flex items-center justify-center gap-2">
+        <span>Submit Proposal to Admin Review Queue</span>
+        <span class="material-symbols-outlined text-[18px]">send</span>
+      </button>
+    </form>
+  </div>
+</div>
+</main><footer class="w-full bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] mt-auto"><div class="max-w-[1440px] mx-auto px-margin py-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><div class="w-2 h-2 rounded-full bg-secondary"></div><p class="font-label-sm text-label-sm text-on-surface-variant text-center md:text-left">University of Science and Technology, Zewail City</p></div><div class="flex items-center gap-space-lg font-caption text-caption text-outline"><span>Academic Year 2024-2025</span></div></div></footer>
+<!-- Universal Interactive Toast Notification Container -->
+<div id="toastNotification" class="fixed bottom-6 right-6 max-w-md bg-primary text-on-primary p-space-md rounded-2xl shadow-2xl transform translate-y-32 opacity-0 transition-all duration-300 pointer-events-none z-50 flex items-start gap-space-sm border border-secondary/30">
+  <span class="material-symbols-outlined text-secondary-fixed text-[24px]" id="toastIcon">info</span>
+  <div class="flex flex-col">
+    <span class="font-title-sm text-title-sm text-on-primary font-semibold" id="toastTitle">System Notification</span>
+    <span class="font-body-sm text-body-sm text-primary-fixed-dim" id="toastMessage">Action successfully acknowledged.</span>
+  </div>
+</div>
+
+<script>
+function showToast(title, message, iconName) {
+  const toast = document.getElementById('toastNotification');
+  if (!toast) return;
+  const toastTitle = document.getElementById('toastTitle');
+  const toastMessage = document.getElementById('toastMessage');
+  const toastIcon = document.getElementById('toastIcon');
+  if (toastTitle) toastTitle.textContent = title;
+  if (toastMessage) toastMessage.textContent = message;
+  if (toastIcon) toastIcon.textContent = iconName || 'info';
+  toast.classList.remove('translate-y-32', 'opacity-0', 'pointer-events-none');
+  toast.classList.add('translate-y-0', 'opacity-100');
+  clearTimeout(window.__toastTimer);
+  window.__toastTimer = setTimeout(() => {
+    toast.classList.add('translate-y-32', 'opacity-0', 'pointer-events-none');
+    toast.classList.remove('translate-y-0', 'opacity-100');
+  }, 4200);
+}
+
+// Global Header Dropdowns Handlers
+document.addEventListener('DOMContentLoaded', () => {
+  const notifBtn = document.getElementById('notifBellBtn');
+  const notifDropdown = document.getElementById('notifDropdown');
+  const userBtn = document.getElementById('userProfileBtn');
+  const userDropdown = document.getElementById('userProfileDropdown');
+
+  if (notifBtn && notifDropdown) {
+    notifBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      notifDropdown.classList.toggle('hidden');
+      if (userDropdown) userDropdown.classList.add('hidden');
+    });
+  }
+
+  if (userBtn && userDropdown) {
+    userBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      userDropdown.classList.toggle('hidden');
+      if (notifDropdown) notifDropdown.classList.add('hidden');
+    });
+  }
+
+  document.addEventListener('click', () => {
+    if (notifDropdown) notifDropdown.classList.add('hidden');
+    if (userDropdown) userDropdown.classList.add('hidden');
+  });
+});
+</script>
+</body></html>

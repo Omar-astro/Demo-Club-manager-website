@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>Zewail Pulse - Student Club Directory</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container-low": "#f2f3ff", "surface-container": "#eaedff", "secondary-fixed": "#79f7e3", "surface-dim": "#d2d9f4", "on-tertiary": "#ffffff", "tertiary": "#1b0d00", "on-primary-container": "#778db2", "outline": "#74777f", "surface-variant": "#dae2fd", "surface-bright": "#faf8ff", "inverse-primary": "#b1c7f0", "inverse-on-surface": "#eef0ff", "on-surface": "#131b2e", "error-container": "#ffdad6", "surface": "#faf8ff", "on-surface-variant": "#44474e", "on-primary": "#ffffff", "on-secondary-fixed": "#00201c", "primary-fixed-dim": "#b1c7f0", "secondary": "#006b5f", "on-error": "#ffffff", "secondary-container": "#76f4e0", "outline-variant": "#c4c6cf", "primary": "#001026", "tertiary-fixed-dim": "#ffb95f", "on-secondary-fixed-variant": "#005047", "on-error-container": "#93000a", "surface-container-highest": "#dae2fd", "error": "#ba1a1a", "on-tertiary-fixed": "#2a1700", "surface-container-lowest": "#ffffff", "inverse-surface": "#283044", "primary-fixed": "#d5e3ff", "surface-tint": "#495f82", "tertiary-fixed": "#ffddb8", "on-background": "#131b2e", "secondary-fixed-dim": "#59dbc7", "on-secondary": "#ffffff", "on-secondary-container": "#006f63", "on-primary-fixed": "#001c3b", "surface-container-high": "#e2e7ff", "tertiary-container": "#372000", "background": "#faf8ff", "on-primary-fixed-variant": "#314769", "primary-container": "#0b2545", "on-tertiary-container": "#c47d00", "on-tertiary-fixed-variant": "#653e00" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter": "1.5rem", "space-sm": "0.5rem", "space-xl": "2.25rem", "margin": "2.5rem", "space-lg": "1.5rem", "space-md": "1rem", "space-xs": "0.25rem" }, "fontFamily": { "body-sm": [ "Inter" ], "headline-md": [ "Plus Jakarta Sans" ], "caption": [ "Inter" ], "label-md": [ "Inter" ], "display-sm": [ "Plus Jakarta Sans" ], "headline-xl": [ "Plus Jakarta Sans" ], "body-md": [ "Inter" ], "label-sm": [ "Inter" ], "title-sm": [ "Inter" ], "headline-lg": [ "Plus Jakarta Sans" ], "body-lg": [ "Inter" ], "display-lg": [ "Plus Jakarta Sans" ] }, "fontSize": { "body-sm": [ "0.8125rem", { "lineHeight": "1.5", "fontWeight": "400" } ], "headline-md": [ "1.25rem", { "lineHeight": "1.4", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "caption": [ "0.6875rem", { "lineHeight": "1.3", "letterSpacing": "0.04em", "fontWeight": "500" } ], "label-md": [ "0.875rem", { "lineHeight": "1.4", "letterSpacing": "0.01em", "fontWeight": "500" } ], "display-sm": [ "2.5rem", { "lineHeight": "1.2", "letterSpacing": "-0.025em", "fontWeight": "700" } ], "headline-xl": [ "2rem", { "lineHeight": "1.25", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "body-md": [ "0.9375rem", { "lineHeight": "1.6", "fontWeight": "400" } ], "label-sm": [ "0.75rem", { "lineHeight": "1.3", "letterSpacing": "0.03em", "fontWeight": "600" } ], "title-sm": [ "1rem", { "lineHeight": "1.5", "letterSpacing": "-0.005em", "fontWeight": "600" } ], "headline-lg": [ "1.5rem", { "lineHeight": "1.3", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "body-lg": [ "1.125rem", { "lineHeight": "1.6", "fontWeight": "400" } ], "display-lg": [ "3.5rem", { "lineHeight": "1.15", "letterSpacing": "-0.03em", "fontWeight": "800" } ] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased min-h-screen flex flex-col"><header class="fixed top-0 left-0 w-full z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-[1440px] mx-auto px-margin flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-xl flex-shrink-0"><a class="flex items-center gap-space-sm group" data-path="dashboard" href="dashboard.html"><div class="flex flex-col"><span class="font-headline-md text-headline-md text-primary tracking-tight leading-none group-hover:text-secondary transition-colors">Zewail<span class="text-secondary">Pulse</span></span><span class="font-caption text-caption text-on-surface-variant tracking-wider uppercase leading-none mt-1">Student Hub</span></div></a><nav class="hidden xl:flex items-center gap-space-xs p-1 bg-surface-container-low rounded-full" data-active-classes="bg-primary-container text-on-primary font-semibold rounded-full">
+<a class="px-space-md py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="dashboard" href="dashboard.html">Dashboard</a>
+<a class="px-space-md py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="events-board" href="events.html">Events Board</a>
+<a aria-current="page" class="px-space-md py-space-xs transition-colors bg-primary-container text-on-primary font-semibold rounded-full shadow-sm" data-path="club-directory" href="clubs.html">Club Directory</a>
+</nav></div><div class="flex items-center gap-space-md flex-1 justify-end">
+<div class="relative max-w-xs w-full hidden md:block">
+<span class="material-symbols-outlined absolute left-space-sm top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]">search</span>
+<input class="w-full h-10 pl-10 pr-space-md bg-surface-container-low rounded-full font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-secondary transition-all" id="headerSearchInput" onkeydown="if(event.key==='Enter'){ window.location.href='events.html?q='+encodeURIComponent(this.value); }" placeholder="Search events, clubs, labs..." type="text"/>
+</div>
+<!-- Notification Bell with Dropdown (FR-04 Scenario 4.2) -->
+<div class="relative">
+<button aria-label="Notifications" class="relative w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors cursor-pointer" id="notifBellBtn" title="View Campus Alerts" type="button">
+<span class="material-symbols-outlined text-[22px]">notifications</span>
+<span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-secondary ring-2 ring-surface-container-lowest animate-pulse"></span>
+</button>
+<div class="hidden absolute right-0 top-12 w-80 bg-surface-container-lowest shadow-2xl rounded-2xl border border-surface-container-high p-space-md z-50 flex flex-col gap-2" id="notifDropdown">
+<div class="flex items-center justify-between pb-2 border-b border-surface-container">
+<span class="font-label-md font-bold text-primary flex items-center gap-1.5"><span class="material-symbols-outlined text-secondary text-[18px]">notifications_active</span> Campus Alerts</span>
+<span class="text-caption px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-semibold">3 Unread</span>
+</div>
+<div class="flex flex-col gap-2 max-h-64 overflow-y-auto pr-1">
+<a class="p-2.5 rounded-xl bg-surface-container-low hover:bg-surface-container flex flex-col gap-0.5 text-left transition-colors" href="club-portal.html">
+<span class="font-label-sm font-semibold text-primary flex items-center justify-between">Robotics Club Assembly <span class="text-caption text-secondary font-mono">14m ago</span></span>
+<span class="font-caption text-on-surface-variant">Lab 102 ROS 2 &amp; LiDAR workshop tomorrow 2:00 PM.</span>
+</a>
+<a class="p-2.5 rounded-xl hover:bg-surface-container-low flex flex-col gap-0.5 text-left transition-colors" href="event-details.html">
+<span class="font-label-sm font-semibold text-primary flex items-center justify-between">Autonomous Rover Workshop <span class="text-caption text-secondary font-mono">1h ago</span></span>
+<span class="font-caption text-on-surface-variant">Seats filling up fast (84% full). Click to view event details.</span>
+</a>
+<a class="p-2.5 rounded-xl hover:bg-surface-container-low flex flex-col gap-0.5 text-left transition-colors" href="club-showcase.html">
+<span class="font-label-sm font-semibold text-primary flex items-center justify-between">Club Q&amp;A Response <span class="text-caption text-secondary font-mono">5h ago</span></span>
+<span class="font-caption text-on-surface-variant">Dr. Tarek Ibrahim answered your inquiry on telescope lab access.</span>
+</a>
+</div>
+</div>
+</div>
+<!-- User Profile Badge with Quick Menu (FR-03 & Requirement 5: Profile Screen Link) -->
+<div class="relative">
+<button class="flex items-center gap-space-sm pl-space-xs pr-space-md py-space-xs bg-surface-container-low rounded-full hover:bg-surface-container transition-colors cursor-pointer text-left" id="userProfileBtn" title="Student Profile &amp; Settings" type="button">
+<div class="relative flex-shrink-0">
+<img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="assets/images/avatar-omar-ashraf.png"/>
+<span class="absolute -bottom-0.5 -right-0.5 w-2.5 h-2.5 rounded-full bg-secondary ring-2 ring-surface-container-lowest"></span>
+</div>
+<div class="hidden sm:flex flex-col text-left">
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold leading-tight">Omar Ashraf</span>
+<span class="material-symbols-outlined text-secondary text-[14px]">verified</span>
+</div>
+<span class="font-caption text-caption text-on-surface-variant leading-tight">CS &amp; AI '26 • ID: 202400725</span>
+</div>
+</button>
+<div class="hidden absolute right-0 top-12 w-72 bg-surface-container-lowest shadow-2xl rounded-2xl border border-surface-container-high p-space-md z-50 flex flex-col gap-2" id="userProfileDropdown">
+<div class="pb-2 border-b border-surface-container flex flex-col">
+<span class="font-label-md font-bold text-primary">Omar Ashraf</span>
+<span class="font-caption text-on-surface-variant">s-oashraf@zewailcity.edu.eg</span>
+<span class="font-caption text-secondary font-semibold mt-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">badge</span>
+          Robotics Lead • UST Fellow
+        </span>
+</div>
+<!-- Prominent Student Profile Button (Requirement 5) -->
+<a class="flex items-center gap-2.5 p-2.5 rounded-xl bg-surface-container hover:bg-surface-container-high text-primary font-bold text-label-sm transition-all border border-secondary/30 shadow-sm" href="profile.html">
+<div class="w-8 h-8 rounded-full bg-primary-container text-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">account_circle</span>
+</div>
+<div class="flex flex-col text-left">
+<span>Student Profile (FR-03)</span>
+<span class="font-caption text-on-surface-variant font-normal">View Bio, Records &amp; Settings</span>
+</div>
+</a>
+<a class="flex items-center gap-2 p-2 text-on-surface hover:text-primary rounded-lg hover:bg-surface-container-low transition-colors text-label-sm font-medium" href="dashboard.html">
+<span class="material-symbols-outlined text-[18px] text-secondary">dashboard</span> Student Dashboard
+      </a>
+<a class="flex items-center gap-2 p-2 text-on-surface hover:text-primary rounded-lg hover:bg-surface-container-low transition-colors text-label-sm font-medium" href="club-portal.html">
+<span class="material-symbols-outlined text-[18px] text-secondary">smart_toy</span> Robotics Member Portal
+      </a>
+<a class="flex items-center gap-2 p-2 text-on-surface hover:text-primary rounded-lg hover:bg-surface-container-low transition-colors text-label-sm font-medium" href="clubs.html">
+<span class="material-symbols-outlined text-[18px] text-secondary">groups</span> Campus Club Directory
+      </a>
+<a class="flex items-center gap-2 p-2 text-error rounded-lg hover:bg-error-container/30 transition-colors text-label-sm font-semibold border-t border-surface-container mt-1 pt-2" href="login.html">
+<span class="material-symbols-outlined text-[18px]">logout</span> Sign Out
+      </a>
+</div>
+</div>
+</div>
+</div></header><main class="w-full pt-20 bg-surface flex-1"><div class="flex flex-col w-full">
+<!-- Interactive Canvas Header & Filter Horizon -->
+<section class="relative w-full max-w-[1440px] mx-auto px-margin pt-space-xl pb-space-lg overflow-hidden">
+<!-- Subtle Ambient Energy Glows -->
+<div class="absolute -top-24 -right-16 w-96 h-96 bg-secondary/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute top-1/2 left-1/3 w-80 h-80 bg-primary-container/5 rounded-full blur-2xl pointer-events-none -z-10"></div>
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-lg mb-space-xl">
+<div class="max-w-3xl">
+
+<h1 class="font-headline-xl text-headline-xl md:text-display-sm text-primary tracking-tight font-extrabold leading-tight">
+          Student Organizations &amp; Clubs Directory
+        </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-2 text-balance leading-relaxed">
+          Find your community, develop extracurricular leadership, and innovate with peer student chapters at Zewail City.
+        </p>
+</div>
+<!-- Quick Metrics Counter Pill Bar -->
+<div class="flex items-center gap-space-md p-space-sm bg-surface-container-lowest rounded-xl shadow-sm self-start lg:self-auto">
+<div class="px-space-md py-space-xs text-left">
+<span class="block font-headline-md text-headline-md font-bold text-primary">18</span>
+<span class="font-caption text-caption text-on-surface-variant uppercase tracking-wider">Sanctioned</span>
+</div>
+<div class="w-px h-8 bg-surface-container-highest"></div>
+<div class="px-space-md py-space-xs text-left">
+<span class="block font-headline-md text-headline-md font-bold text-secondary">1 Active</span>
+<span class="font-caption text-caption text-on-surface-variant uppercase tracking-wider">Membership</span>
+</div>
+<div class="w-px h-8 bg-surface-container-highest"></div>
+<div class="px-space-md py-space-xs text-left">
+<span class="block font-headline-md text-headline-md font-bold text-on-tertiary-container">1 In Review</span>
+<span class="font-caption text-caption text-on-surface-variant uppercase tracking-wider">Application</span>
+</div>
+</div>
+</div>
+<!-- Search Toolbar and Filter Chips -->
+<div class="flex flex-col md:flex-row items-stretch md:items-center justify-between gap-space-md bg-surface-container-lowest p-3 rounded-2xl shadow-sm">
+<div class="relative flex-1">
+<span class="material-symbols-outlined absolute left-space-md top-1/2 -translate-y-1/2 text-outline text-[22px]">search</span>
+<input class="w-full h-12 pl-12 pr-space-md bg-surface-container-low rounded-xl font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest transition-all" id="clubSearchInput" placeholder="Search clubs by name, mission, or committee..." type="text"/>
+</div>
+<!-- Category Filter Pills -->
+<div class="flex items-center gap-2 overflow-x-auto pb-1 md:pb-0 scrollbar-none" id="filterPillsContainer">
+<button class="filter-pill active whitespace-nowrap px-4 py-2.5 rounded-full font-label-md text-label-md font-semibold bg-primary text-on-primary shadow-sm transition-all" data-category="all">
+          All Clubs (18)
+        </button>
+<button class="filter-pill whitespace-nowrap px-4 py-2.5 rounded-full font-label-md text-label-md font-medium bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-category="tech">
+          Engineering &amp; Tech
+        </button>
+<button class="filter-pill whitespace-nowrap px-4 py-2.5 rounded-full font-label-md text-label-md font-medium bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-category="sciences">
+          Applied Sciences
+        </button>
+<button class="filter-pill whitespace-nowrap px-4 py-2.5 rounded-full font-label-md text-label-md font-medium bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-category="arts">
+          Arts &amp; Culture
+        </button>
+<button class="filter-pill whitespace-nowrap px-4 py-2.5 rounded-full font-label-md text-label-md font-medium bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-category="social">
+          Social &amp; Community
+        </button>
+</div>
+</div>
+</section>
+<!-- Club Cards Showcase Grid (Asymmetric Bento Arrangement) -->
+<section class="w-full max-w-[1440px] mx-auto px-margin pb-space-xl">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter items-stretch">
+<!-- CARD 1: Zewail Robotics Club (Active Member Feature Card) -->
+<div class="club-card lg:col-span-2 group flex flex-col justify-between bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-xl transition-all duration-300 relative overflow-hidden" data-category="tech">
+<!-- Structural Decorative Gradient Bar on Edge -->
+<div class="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-secondary to-secondary-fixed"></div>
+<div>
+<!-- Card Header & Badge Strip -->
+<div class="flex items-center justify-between gap-2 mb-space-md">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+                Open for Enrollment
+              </span>
+<span class="px-2.5 py-1 rounded-md bg-surface-container font-caption text-caption text-on-surface-variant uppercase tracking-wider font-semibold">
+                By Application
+              </span>
+</div>
+<!-- Hero Identity Row for ZRC -->
+<div class="flex flex-col sm:flex-row sm:items-center gap-space-md mb-space-md">
+<div class="w-16 h-16 rounded-2xl bg-primary-container text-secondary-fixed flex items-center justify-center font-display-sm text-headline-xl font-bold shadow-inner flex-shrink-0">
+<span class="material-symbols-outlined text-[36px]">smart_toy</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-2">
+<h3 class="font-headline-lg text-headline-lg font-bold text-primary group-hover:text-secondary transition-colors"><a class="hover:text-secondary transition-colors" href="club-portal.html">Zewail Robotics Club</a></h3>
+<span class="material-symbols-outlined text-secondary text-[20px]" title="Accredited Academic Chapter">verified</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-medium uppercase tracking-wider">
+                Engineering &amp; Robotics • UST Innovation Wing
+              </span>
+</div>
+</div>
+<!-- Mission Paragraph -->
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-lg leading-relaxed">
+            Designing competitive autonomous rovers, combat robots, and conducting hands-on embedded systems bootcamps. Representing Zewail City in international competitions like ERC and RoboSub.
+          </p>
+<!-- Governance & Metrics Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm p-space-md bg-surface-container-low rounded-xl mb-space-lg">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-surface-container-high flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[18px]">badge</span>
+</div>
+<div class="min-w-0">
+<span class="block font-caption text-caption text-outline uppercase">Chapter President</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold truncate block">Ahmed Tarek (Mechatronics '25)</span>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-surface-container-high flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[18px]">school</span>
+</div>
+<div class="min-w-0">
+<span class="block font-caption text-caption text-outline uppercase">Faculty Advisor</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold truncate block">Dr. Khaled Mostafa</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Action Strip with Member Status Indicator -->
+<div class="pt-space-md flex flex-wrap items-center justify-between gap-space-md">
+<div class="flex items-center gap-3">
+<div class="flex -space-x-2">
+<div class="w-7 h-7 rounded-full bg-surface-variant text-primary font-caption text-caption flex items-center justify-center font-bold ring-2 ring-surface-container-lowest">AT</div>
+<div class="w-7 h-7 rounded-full bg-secondary-fixed text-on-secondary-fixed font-caption text-caption flex items-center justify-center font-bold ring-2 ring-surface-container-lowest">OA</div>
+<div class="w-7 h-7 rounded-full bg-primary-fixed text-on-primary-fixed font-caption text-caption flex items-center justify-center font-bold ring-2 ring-surface-container-lowest">KM</div>
+</div>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">48 active members</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="font-caption text-caption text-secondary font-medium">Embedded Labs C-102</span>
+</div>
+<div class="flex items-center gap-2">
+<a class="px-4 py-2 rounded-xl font-label-md text-label-md font-medium text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" href="club-portal.html">
+              View Public Profile
+            </a>
+<a class="px-space-md py-2 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm font-semibold hover:bg-on-secondary-container transition-all flex items-center gap-1 shadow-sm" href="club-portal.html">
+<span>Open Member Portal</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- CARD 2: GDSC Zewail (Pending State Card) -->
+<div class="club-card flex flex-col justify-between bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-xl transition-all duration-300 relative overflow-hidden" data-category="tech">
+<div class="absolute top-0 left-0 right-0 h-1.5 bg-tertiary-fixed-dim"></div>
+<div>
+<!-- Header Status -->
+<div class="flex items-center justify-between gap-2 mb-space-md">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+              Open for Enrollment
+            </span>
+<span class="px-2.5 py-1 rounded-md bg-surface-container font-caption text-caption text-on-surface-variant uppercase tracking-wider font-semibold">
+              By Application
+            </span>
+</div>
+<!-- Logo & Title -->
+<div class="flex items-center gap-3 mb-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high text-primary flex items-center justify-center font-display-sm text-headline-md font-bold shadow-sm">
+<span class="material-symbols-outlined text-[28px] text-secondary">code_blocks</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md font-bold text-primary"><a class="hover:text-secondary transition-colors" href="club-showcase.html">GDSC Zewail</a></h3>
+<span class="font-caption text-caption text-on-surface-variant block">Software &amp; Artificial Intelligence</span>
+</div>
+</div>
+<!-- Mission -->
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md line-clamp-3">
+            Empowering student developers to build mobile, cloud, and AI solutions with Google technologies. Hosting Solution Challenge hackathons and Google Cloud Study Jams.
+          </p>
+<!-- Advisor & President details -->
+<div class="space-y-2 p-space-sm bg-surface-container-low rounded-xl mb-space-md">
+<div class="flex justify-between items-center text-label-sm">
+<span class="font-caption text-caption text-outline">President:</span>
+<span class="font-semibold text-on-surface">Nouran El-Sayed</span>
+</div>
+<div class="flex justify-between items-center text-label-sm">
+<span class="font-caption text-caption text-outline">Advisor:</span>
+<span class="font-semibold text-on-surface">Dr. Mohamed Sami Rakha</span>
+</div>
+<div class="flex justify-between items-center text-label-sm pt-1 border-t border-surface-container-highest">
+<span class="font-caption text-caption text-outline">Community Size:</span>
+<span class="font-semibold text-secondary">75 Registered Members</span>
+</div>
+</div>
+</div>
+<div class="pt-space-sm">
+<a class="px-space-md py-2 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm font-semibold hover:bg-on-secondary-container transition-all flex items-center gap-1 shadow-sm" href="club-showcase.html">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+<span>View Club Details &amp; Status</span>
+</a>
+</div>
+</div>
+<!-- CARD 3: Zewail Astronomy Society (Open State Card) -->
+<div class="club-card flex flex-col justify-between bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-xl transition-all duration-300 relative overflow-hidden" data-category="sciences">
+<div class="absolute top-0 left-0 right-0 h-1.5 bg-secondary"></div>
+<div>
+<!-- Status Banner -->
+<div class="flex items-center justify-between gap-2 mb-space-md">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+              Open for Enrollment
+            </span>
+<span class="px-2.5 py-1 rounded-md bg-surface-container font-caption text-caption text-on-surface-variant uppercase tracking-wider font-semibold">
+              Auto-Approved
+            </span>
+</div>
+<!-- Identity -->
+<div class="flex items-center gap-3 mb-space-md">
+<div class="w-12 h-12 rounded-xl bg-primary-container text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[28px] text-secondary-fixed">nightlight_round</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md font-bold text-primary"><a class="hover:text-secondary transition-colors" href="club-showcase.html">Zewail Astronomy Society</a></h3>
+<span class="font-caption text-caption text-on-surface-variant block">Applied Sciences &amp; Astrophysics</span>
+</div>
+</div>
+<!-- Mission -->
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md line-clamp-3">
+            Observational astronomy, astrophysics seminars, and night telescope sessions on campus. Operates the UST Optical Telescope Array atop Building 3.
+          </p>
+<!-- Key Roster -->
+<div class="space-y-2 p-space-sm bg-surface-container-low rounded-xl mb-space-md">
+<div class="flex justify-between items-center text-label-sm">
+<span class="font-caption text-caption text-outline">President:</span>
+<span class="font-semibold text-on-surface">Youssef Mansour</span>
+</div>
+<div class="flex justify-between items-center text-label-sm">
+<span class="font-caption text-caption text-outline">Advisor:</span>
+<span class="font-semibold text-on-surface">Dr. Tarek Ibrahim</span>
+</div>
+<div class="flex justify-between items-center text-label-sm pt-1 border-t border-surface-container-highest">
+<span class="font-caption text-caption text-outline">Members:</span>
+<span class="font-semibold text-on-surface">34 Stargazers</span>
+</div>
+</div>
+</div>
+<div class="pt-space-sm">
+<a class="px-space-md py-2 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm font-semibold hover:bg-on-secondary-container transition-all flex items-center gap-1 shadow-sm" href="club-showcase.html">
+<span class="material-symbols-outlined text-[18px]">group_add</span>
+<span>Explore &amp; Join Club</span>
+</a>
+</div>
+</div>
+<!-- CARD 4: Biotech & Genetic Engineering Syndicate (Closed Recruitment) -->
+<div class="club-card flex flex-col justify-between bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-xl transition-all duration-300 relative overflow-hidden" data-category="sciences">
+<div class="absolute top-0 left-0 right-0 h-1.5 bg-outline"></div>
+<div>
+<div class="flex items-center justify-between gap-2 mb-space-md">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">lock</span>
+              Closed
+            </span>
+<span class="px-2.5 py-1 rounded-md bg-surface-container font-caption text-caption text-on-surface-variant uppercase tracking-wider font-semibold">
+              By Application
+            </span>
+</div>
+<div class="flex items-center gap-3 mb-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[28px] text-primary-fixed-dim">biotech</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md font-bold text-primary"><a class="hover:text-secondary transition-colors" href="club-showcase.html">Biotech Syndicate</a></h3>
+<span class="font-caption text-caption text-on-surface-variant block">Life &amp; Biomedical Sciences</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md line-clamp-3">
+            Specialized undergraduate research group exploring CRISPR diagnostics, synthetic biology protocols, and industrial enzyme applications in the Dr. Ahmed Zewail laboratories.
+          </p>
+<div class="space-y-2 p-space-sm bg-surface-container-low rounded-xl mb-space-md">
+<div class="flex justify-between items-center text-label-sm">
+<span class="font-caption text-caption text-outline">President:</span>
+<span class="font-semibold text-on-surface">Mariam Fawzy</span>
+</div>
+<div class="flex justify-between items-center text-label-sm">
+<span class="font-caption text-caption text-outline">Advisor:</span>
+<span class="font-semibold text-on-surface">Dr. Reham Samir</span>
+</div>
+<div class="flex justify-between items-center text-label-sm pt-1 border-t border-surface-container-highest">
+<span class="font-caption text-caption text-outline">Next Cohort:</span>
+<span class="font-semibold text-outline">Spring 2026</span>
+</div>
+</div>
+</div>
+<div class="pt-space-sm">
+<a class="px-space-md py-2 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm font-semibold hover:bg-on-secondary-container transition-all flex items-center gap-1 shadow-sm" href="club-showcase.html">
+<span class="material-symbols-outlined text-[18px]">help_outline</span>
+<span>View Club Info &amp; Q&amp;A</span>
+</a>
+</div>
+</div>
+<!-- CARD 5: Zewail Debate & Model United Nations (MUN) -->
+<div class="club-card flex flex-col justify-between bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-xl transition-all duration-300 relative overflow-hidden" data-category="social">
+<div class="absolute top-0 left-0 right-0 h-1.5 bg-secondary"></div>
+<div>
+<div class="flex items-center justify-between gap-2 mb-space-md">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+              Open for Enrollment
+            </span>
+<span class="px-2.5 py-1 rounded-md bg-surface-container font-caption text-caption text-on-surface-variant uppercase tracking-wider font-semibold">
+              By Application
+            </span>
+</div>
+<div class="flex items-center gap-3 mb-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[28px] text-primary">record_voice_over</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md font-bold text-primary"><a class="hover:text-secondary transition-colors" href="club-showcase.html">Zewail Debate &amp; MUN</a></h3>
+<span class="font-caption text-caption text-on-surface-variant block">Social, Diplomacy &amp; Leadership</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md line-clamp-3">
+            Fostering critical discourse, geopolitical debate simulations, and public diplomacy skills. Regularly contending in national Oxford-style parliamentary debates.
+          </p>
+<div class="space-y-2 p-space-sm bg-surface-container-low rounded-xl mb-space-md">
+<div class="flex justify-between items-center text-label-sm">
+<span class="font-caption text-caption text-outline">Secretary-General:</span>
+<span class="font-semibold text-on-surface">Layla Mansour</span>
+</div>
+<div class="flex justify-between items-center text-label-sm">
+<span class="font-caption text-caption text-outline">Advisor:</span>
+<span class="font-semibold text-on-surface">Dr. Ashraf Abdel-Ghani</span>
+</div>
+<div class="flex justify-between items-center text-label-sm pt-1 border-t border-surface-container-highest">
+<span class="font-caption text-caption text-outline">Delegates:</span>
+<span class="font-semibold text-on-surface">52 Active Members</span>
+</div>
+</div>
+</div>
+<div class="pt-space-sm">
+<a class="px-space-md py-2 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm font-semibold hover:bg-on-secondary-container transition-all flex items-center gap-1 shadow-sm" href="club-showcase.html">
+<span class="material-symbols-outlined text-[18px]">send</span>
+<span>Explore &amp; Join Club</span>
+</a>
+</div>
+</div>
+<!-- CARD 6: Interactive Showcase Teaser for Visual Richness -->
+
+</div>
+</section>
+<!-- FR-18 Promotional Charter Submission CTA Banner -->
+<section class="w-full max-w-[1440px] mx-auto px-margin pb-space-xl">
+<div class="relative rounded-3xl bg-surface-container-high p-space-xl overflow-hidden shadow-sm flex flex-col lg:flex-row items-center justify-between gap-space-xl">
+<!-- Decorative Backdrop Geometry -->
+<div class="absolute -right-20 -bottom-20 w-80 h-80 rounded-full bg-secondary/15 blur-2xl pointer-events-none"></div>
+<div class="absolute left-1/4 -top-12 w-64 h-64 rounded-full bg-primary-container/10 blur-xl pointer-events-none"></div>
+<div class="relative z-10 max-w-2xl text-left">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary/15 text-secondary font-label-sm text-label-sm font-bold mb-space-sm">
+<span class="material-symbols-outlined text-[16px]">lightbulb</span>
+          Charter Innovation Track
+        </div>
+<h2 class="font-headline-xl text-headline-xl md:text-display-sm text-primary font-extrabold tracking-tight">
+          Want to start a new club?
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 text-balance leading-relaxed">
+          Zewail City encourages student leadership. Gather 10 founding members, secure a faculty advisor, and draft a mission statement aligned with our city charter.
+        </p>
+<div class="flex flex-wrap items-center gap-space-md mt-space-md text-label-sm text-on-surface-variant">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[18px]">verified_user</span>
+            Dean of Student Affairs Approved
+          </span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[18px]">payments</span>
+            Annual Student Activity Grant
+          </span>
+</div>
+</div>
+<div class="relative z-10 flex-shrink-0 flex flex-col sm:flex-row items-center gap-space-sm w-full lg:w-auto">
+
+<button class="w-full sm:w-auto px-space-lg py-4 rounded-full font-label-md text-label-md font-medium text-on-surface hover:bg-surface-container-highest transition-all" type="button">
+          View Charter Guidelines
+        </button>
+</div>
+</div>
+</section>
+</div>
+<script>
+  // Dynamic Live Search & Category Filtering Micro-Interactions
+  (function initDirectoryFilters() {
+    const searchInput = document.getElementById('clubSearchInput');
+    const filterPills = document.querySelectorAll('.filter-pill');
+    const clubCards = document.querySelectorAll('.club-card');
+
+    let currentCategory = 'all';
+    let searchQuery = '';
+
+    function applyFilter() {
+      clubCards.forEach(card => {
+        const category = card.getAttribute('data-category');
+        const textContent = card.innerText.toLowerCase();
+        
+        const matchesCategory = (currentCategory === 'all') || (category === currentCategory);
+        const matchesSearch = textContent.includes(searchQuery.toLowerCase());
+
+        if (matchesCategory && matchesSearch) {
+          card.classList.remove('hidden');
+          card.classList.add('flex');
+        } else {
+          card.classList.add('hidden');
+          card.classList.remove('flex');
+        }
+      });
+    }
+
+    if (searchInput) {
+      searchInput.addEventListener('input', (e) => {
+        searchQuery = e.target.value.trim();
+        applyFilter();
+      });
+    }
+
+    filterPills.forEach(pill => {
+      pill.addEventListener('click', () => {
+        filterPills.forEach(p => {
+          p.classList.remove('bg-primary', 'text-on-primary');
+          p.classList.add('bg-surface-container-low', 'text-on-surface-variant');
+        });
+
+        pill.classList.remove('bg-surface-container-low', 'text-on-surface-variant');
+        pill.classList.add('bg-primary', 'text-on-primary');
+
+        currentCategory = pill.getAttribute('data-category');
+        applyFilter();
+      });
+    });
+  })();
+</script>
+<!-- FR-18 Club Charter Submission Modal -->
+<div id="charterModal" class="hidden fixed inset-0 bg-primary-container/60 backdrop-blur-sm z-50 flex items-center justify-center p-4">
+  <div class="bg-surface-container-lowest p-space-xl rounded-2xl max-w-xl w-full shadow-2xl border border-surface-container-high relative max-h-[90vh] overflow-y-auto">
+    <button onclick="closeCharterModal()" class="absolute top-4 right-4 text-on-surface-variant hover:text-on-surface p-1 rounded-full bg-surface-container"><span class="material-symbols-outlined text-[20px]">close</span></button>
+    <div class="flex items-center gap-space-xs mb-2">
+      <span class="material-symbols-outlined text-secondary text-[26px]">foundation</span>
+      <h3 class="font-headline-md text-headline-md font-bold text-primary">Found a Student Club (FR-18)</h3>
+    </div>
+    <p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Submit an official charter application packet to establish a new recognized student organization at Zewail City.</p>
+    <form onsubmit="event.preventDefault(); submitCharter();" class="space-y-3">
+      <div>
+        <label class="font-label-sm text-on-surface font-semibold block mb-1">Proposed Club Name *</label>
+        <input type="text" id="charterName" placeholder="e.g. Zewail Quantum Computing Society" required class="w-full h-10 px-3 rounded-lg bg-surface font-body-sm text-on-surface border border-outline-variant focus:outline-none focus:ring-2 focus:ring-secondary"/>
+      </div>
+      <div class="grid grid-cols-2 gap-3">
+        <div>
+          <label class="font-label-sm text-on-surface font-semibold block mb-1">Category *</label>
+          <select id="charterCategory" class="w-full h-10 px-3 rounded-lg bg-surface font-body-sm text-on-surface border border-outline-variant focus:outline-none focus:ring-2 focus:ring-secondary">
+            <option>Engineering & Tech</option>
+            <option>Applied Sciences</option>
+            <option>Arts & Culture</option>
+            <option>Social & Community</option>
+          </select>
+        </div>
+        <div>
+          <label class="font-label-sm text-on-surface font-semibold block mb-1">Constitution Doc URL *</label>
+          <input type="url" id="charterUrl" placeholder="https://drive.google.com/..." required class="w-full h-10 px-3 rounded-lg bg-surface font-body-sm text-on-surface border border-outline-variant focus:outline-none focus:ring-2 focus:ring-secondary"/>
+        </div>
+      </div>
+      <div>
+        <label class="font-label-sm text-on-surface font-semibold block mb-1">Mission & Purpose Statement *</label>
+        <textarea id="charterMission" rows="3" placeholder="Outline organizational goals, committee framework, and planned campus activities..." required class="w-full p-3 rounded-lg bg-surface font-body-sm text-on-surface border border-outline-variant focus:outline-none focus:ring-2 focus:ring-secondary"></textarea>
+      </div>
+      <div class="grid grid-cols-2 gap-3">
+        <div>
+          <label class="font-label-sm text-on-surface font-semibold block mb-1">Faculty Advisor Name *</label>
+          <input type="text" id="advisorName" placeholder="Dr. Tarek Ibrahim" required class="w-full h-10 px-3 rounded-lg bg-surface font-body-sm text-on-surface border border-outline-variant focus:outline-none focus:ring-2 focus:ring-secondary"/>
+        </div>
+        <div>
+          <label class="font-label-sm text-on-surface font-semibold block mb-1">Advisor Institutional Email *</label>
+          <input type="email" id="advisorEmail" placeholder="advisor@zewailcity.edu.eg" required class="w-full h-10 px-3 rounded-lg bg-surface font-body-sm text-on-surface border border-outline-variant focus:outline-none focus:ring-2 focus:ring-secondary"/>
+        </div>
+      </div>
+      <div class="p-2.5 rounded-lg bg-surface-container font-caption text-caption text-on-surface-variant flex items-center gap-2">
+        <span class="material-symbols-outlined text-secondary text-[18px]">verified</span>
+        <span>Per FR-19, admin approval auto-provisions database entity and appoints founder as President.</span>
+      </div>
+      <button type="submit" class="w-full h-11 rounded-full bg-secondary hover:bg-on-secondary-container text-on-secondary font-label-md font-semibold transition-all mt-2 flex items-center justify-center gap-2">
+        <span>Submit Charter Application Packet</span>
+        <span class="material-symbols-outlined text-[18px]">send</span>
+      </button>
+    </form>
+  </div>
+</div>
+</main><footer class="w-full bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] mt-auto"><div class="max-w-[1440px] mx-auto px-margin py-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><div class="w-2 h-2 rounded-full bg-secondary"></div><p class="font-label-sm text-label-sm text-on-surface-variant text-center md:text-left">University of Science and Technology, Zewail City</p></div><div class="flex items-center gap-space-lg font-caption text-caption text-outline"><span>Academic Year 2024-2025</span></div></div></footer>
+<script>
+  function openCharterModal() {
+    document.getElementById('charterModal').classList.remove('hidden');
+  }
+
+  function closeCharterModal() {
+    document.getElementById('charterModal').classList.add('hidden');
+  }
+
+  function submitCharter() {
+    const name = document.getElementById('charterName').value;
+    closeCharterModal();
+    showToast('Charter Submitted (FR-18)', `Application packet for "${name}" queued with status PENDING for administrative evaluation.`, 'mark_email_read');
+  }
+</script>
+
+<!-- Universal Interactive Toast Notification Container -->
+<div id="toastNotification" class="fixed bottom-6 right-6 max-w-md bg-primary text-on-primary p-space-md rounded-2xl shadow-2xl transform translate-y-32 opacity-0 transition-all duration-300 pointer-events-none z-50 flex items-start gap-space-sm border border-secondary/30">
+  <span class="material-symbols-outlined text-secondary-fixed text-[24px]" id="toastIcon">info</span>
+  <div class="flex flex-col">
+    <span class="font-title-sm text-title-sm text-on-primary font-semibold" id="toastTitle">System Notification</span>
+    <span class="font-body-sm text-body-sm text-primary-fixed-dim" id="toastMessage">Action successfully acknowledged.</span>
+  </div>
+</div>
+
+<script>
+function showToast(title, message, iconName) {
+  const toast = document.getElementById('toastNotification');
+  if (!toast) return;
+  const toastTitle = document.getElementById('toastTitle');
+  const toastMessage = document.getElementById('toastMessage');
+  const toastIcon = document.getElementById('toastIcon');
+  if (toastTitle) toastTitle.textContent = title;
+  if (toastMessage) toastMessage.textContent = message;
+  if (toastIcon) toastIcon.textContent = iconName || 'info';
+  toast.classList.remove('translate-y-32', 'opacity-0', 'pointer-events-none');
+  toast.classList.add('translate-y-0', 'opacity-100');
+  clearTimeout(window.__toastTimer);
+  window.__toastTimer = setTimeout(() => {
+    toast.classList.add('translate-y-32', 'opacity-0', 'pointer-events-none');
+    toast.classList.remove('translate-y-0', 'opacity-100');
+  }, 4200);
+}
+
+// Global Header Dropdowns Handlers
+document.addEventListener('DOMContentLoaded', () => {
+  const notifBtn = document.getElementById('notifBellBtn');
+  const notifDropdown = document.getElementById('notifDropdown');
+  const userBtn = document.getElementById('userProfileBtn');
+  const userDropdown = document.getElementById('userProfileDropdown');
+
+  if (notifBtn && notifDropdown) {
+    notifBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      notifDropdown.classList.toggle('hidden');
+      if (userDropdown) userDropdown.classList.add('hidden');
+    });
+  }
+
+  if (userBtn && userDropdown) {
+    userBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      userDropdown.classList.toggle('hidden');
+      if (notifDropdown) notifDropdown.classList.add('hidden');
+    });
+  }
+
+  document.addEventListener('click', () => {
+    if (notifDropdown) notifDropdown.classList.add('hidden');
+    if (userDropdown) userDropdown.classList.add('hidden');
+  });
+});
+</script>
+</body></html>
